@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.play_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.play_button {
+    position: absolute;
+    padding: 75px 15px 10px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.play_button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
