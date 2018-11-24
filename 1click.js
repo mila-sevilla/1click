@@ -1,5 +1,5 @@
-var coffee_sound = new Audio ();
-coffee_sound.src = "audio/coffee.m4a";
+// var coffee_sound = new Audio ();
+// coffee_sound.src = "audio/coffee.m4a";
 
 // function playSound(soundobj) {
 //   var thissound=document.getElementById(soundobj);
