@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -7,15 +11,46 @@
 }
 
 .play_icon {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.circle-container {
+    position: relative;
+    width: 30em;
+    height: 30em;
+}
+
+.circle-container a {
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 12em; height: 12em;
+    margin-top: -4em;
+    margin-left: -7em;
+}
+.circle-container img { 
+    display: block; 
+    width: 100%; 
+    transition: all 0.3s ease-in-out;
+}
+.coffee { transform: rotate(-28deg) translate(19em) rotate(28deg); } 
+.salt { transform: rotate(23deg) translate(18em) rotate(-23deg); }
+.glass { transform: rotate(87deg) translate(13em) rotate(-87deg); }
+.table { transform: rotate(154deg) translate(16em) rotate(-154deg);}
+.water { transform: rotate(212deg) translate(17em) rotate(-212deg); }
+.dining { transform: rotate(272deg) translate(17em) rotate(-272deg); }
+
+.circle-container img:hover {
+    transform: scale(1.05)
+}
+
 .play_button {
     position: absolute;
-    padding: 75px 15px 10px 10px;
+    padding: 50px 10px 10px 10px;
     transition: all 0.3s ease-in-out;
 }
 
