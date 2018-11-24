@@ -1,3 +1,36 @@
+// var sofa = document.getElementById("sofa");
+
+// function setup() {
+//   sofa = loadSound ("audio/new/sofa.mp3", loaded);
+//   sofa.setVolume(0.8);
+// } 
+
+// function loaded() {
+//   sofa.play();
+// }
+
+
+// var coffee = document.getElementById("coffee");
+// var btn = document.getElementById("play_button");
+
+// function play() {
+//   if (coffee.paused) {
+//     coffee.play();
+//     btn.style.background = "url(play.svg) no-repeat"
+//   }
+
+//   else {
+//     coffee.pause();
+//     btn.style.background ) "url(pause.svg) no-repeat"
+//   }
+// }
+
+// function mutePage() {
+//   var elems = document.querySelectorAll("audio");
+
+//   [].forEach.call(elems, function(elem) { muteMe(elem); });
+// }
+
 // var coffee_sound = new Audio ();
 // coffee_sound.src = "audio/coffee.m4a";
 
