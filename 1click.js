@@ -14,24 +14,28 @@ function addEvent(obj, type, fn) {
  
  function togglePlay(state) {
      var audio = document.getElementById('sofa'),
+         allaudio = document.getElementsByTagName('audio'),
          play  = document.getElementById('play'),
          pause = document.getElementById('pause');
  
+
+
      if (state == 'play') {
          audio.play();
          play.style.display = 'none';
          pause.style.display = 'block';
      }else{
-         audio.pause();
+         for(i=0; i<allaudio.length; i++) allaudio[i].pause();
          play.style.display = 'block';
          pause.style.display = 'none';
      }
  }
 
- document.getElementById('pause').onclick = function() {
-    var sounds = document.getElementsByTagName('audio');
-    for(i=0; i<sounds.length; i++) sounds[i].pause();
-};
+//  document.getElementById('pause').onclick = function() {
+//     var sounds = document.getElementsByTagName('audio');
+//     for(i=0; i<sounds.length; i++) sounds[i].pause();
+
+// };
 
 // var sofa = document.getElementById("sofa");
 
