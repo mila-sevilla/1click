@@ -14,7 +14,6 @@
         <div class='circle-container'>
             <a href='#' 
                 onmouseover="document.getElementById('coffee').play()"; 
-                on
                 class='coffee'><img src="img/coffee.png" alt="coffee">
             </a>
             <a href='#' 
@@ -44,8 +43,11 @@
             </svg>
     
             <button
-                onclick="document.getElementById('sofa').play()"; 
+                id="play" onclick="togglePlay('play')" 
                 class="play_button" id="play_button"> 
+            </button>
+
+            <button id="pause" class="pause_button" onclick="togglePlay('pause')" style="display:none">
             </button>
         </div>
        

@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    margin: 0;
 }
 
 .container {
@@ -18,11 +19,10 @@ body {
     flex-direction: column;
 }
 
-.play_button {
+.house button {
     position: absolute;
     transition: all 0.3s ease-in-out;
     border: none;
-    background: url(img/play.png) no-repeat;
     background-position: center;
     width: 50%;
     height: 50%;
@@ -31,9 +31,17 @@ body {
     background-position-y: bottom;
 }
 
-.play_button:hover {
+.house button:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.play_button {
+    background: url(img/play.png) no-repeat;
+}
+
+.pause_button {
+    background: url(img/pause.png) no-repeat;
 }
 
 .circle-container {

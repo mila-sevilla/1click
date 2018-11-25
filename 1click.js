@@ -1,3 +1,38 @@
+
+function addEvent(obj, type, fn) {
+    if (obj.addEventListener) {
+      obj.addEventListener(type, fn, false);
+    } else if (obj.attachEvent) {
+      obj.attachEvent("on" + type, fn);
+    }
+ }
+ 
+ addEvent(document.getElementById('sofa'), 'ended', function() {
+     document.getElementById('play').style.display = 'block';
+     document.getElementById('pause').style.display = 'none';
+ });
+ 
+ function togglePlay(state) {
+     var audio = document.getElementById('sofa'),
+         play  = document.getElementById('play'),
+         pause = document.getElementById('pause');
+ 
+     if (state == 'play') {
+         audio.play();
+         play.style.display = 'none';
+         pause.style.display = 'block';
+     }else{
+         audio.pause();
+         play.style.display = 'block';
+         pause.style.display = 'none';
+     }
+ }
+
+ document.getElementById('pause').onclick = function() {
+    var sounds = document.getElementsByTagName('audio');
+    for(i=0; i<sounds.length; i++) sounds[i].pause();
+};
+
 // var sofa = document.getElementById("sofa");
 
 // function setup() {
